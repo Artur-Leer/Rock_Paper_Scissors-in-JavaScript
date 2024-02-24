@@ -4,6 +4,15 @@ function getComputerChoice (){
     return CHOICES[index];
 }
 
+function validChoice (playerChoice,CHOICES){
+    return CHOICES.includes(playerChoice);
+}
+
+function getPlayerChoice (){
+    let playerChoice = (prompt('ROCK, PAPER OR SCISSORS?').toUpperCase());
+    return playerChoice;
+}
+
 
 
 
