@@ -16,6 +16,8 @@ function getPlayerChoice (){
 
 function playGame (){
 // DEFINE COMPUTERCHOICE & PLAYERCHOICE
+let rounds = 0;
+while (rounds < 5) {
     const computerChoice = getComputerChoice();
     const playerChoice = getPlayerChoice();
 // CHECK IF PLAYERCHOICE IS VALID
@@ -32,7 +34,10 @@ function playGame (){
                         console.log('You win!');
                     } else {
                         console.log ('Computer wins!');
-                    }
+                    }}
+        rounds++;
+        console.log(rounds);
+        
 
     }}
     playGame();
